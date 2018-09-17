@@ -11,14 +11,14 @@ MySQL
 
 Configure Maven
 
-Head here for a complete guide to [journaldev](https://www.journaldev.com/2916/hibernate-one-to-one-mapping-example-annotation) 
+Head here for a complete guide about this project [journaldev](https://www.journaldev.com/2916/hibernate-one-to-one-mapping-example-annotation) 
 
 
 ### Errors encountered while working with this project
 
 MySQl if already registered with another project and facing issues while connecting to DB
 
-HEAD here [stackoverflow](https://www.journaldev.com/2916/hibernate-one-to-one-mapping-example-annotation)
+HEAD here --> [stackoverflow](https://www.journaldev.com/2916/hibernate-one-to-one-mapping-example-annotation)
 
 or READ HERE
 
