@@ -48,6 +48,6 @@ or READ HERE
 
 ## Acknowledgments
 
-* Hat tip to anyone whose code was used **journaldev**
+* Hat tip to anyone whose code was used --> **journaldev**
 * Inspiration
 * etc
