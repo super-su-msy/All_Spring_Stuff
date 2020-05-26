@@ -7,3 +7,40 @@
 15:02:04.068 INFO  c.v.c.d.App -   Started App in 47.821 seconds (JVM running for 48.989)
 
 %{TIME:log_time} %{LOGLEVEL:log_level} %{DATA:class_name} %{GREEDYDATA :threadName}
+
+### Provide the input file path pattern
+### Configure path, type and sincedb_path as per the application configuration
+
+input {
+    file {
+        path => ["C:/Users/madika8/Desktop/LOCAL_LOGS///*.log"]
+        type => "applog"
+        tags => "applog"
+    }
+}
+
+filter {
+	if [type] == "applog" {
+		grok {
+        	match => { "message" => "%{TIME:log_time} %{LOGLEVEL:log_level} %{DATA:class_name} %{GREEDYDATA :threadName}"}
+    	}
+    	add_field => {
+	      "app_environment" => "local-cloud"          ### change this to prod for PROD env
+	      "dc" => "local"                              ### change this to prod for PROD env
+	      "backend" => "spring-boot"
+    	}
+
+	}
+}
+
+### Provide appropriate value for application kafka topic ID and comma separated list of kafka servers below.
+### Make sure jaas and kerberos file path are valid.
+
+output {
+    stdout {}
+    file {
+        path => "C:/Users/madika8/Desktop/OUTPUT_LOGS/output.txt"
+    }
+}
+
+
