@@ -1,0 +1,7 @@
+
+15:02:03.954 DEBUG o.s.w.s.r.ResourceUrlProvider -   Looking for resource handler mappings
+15:02:03.957 DEBUG o.s.w.s.r.ResourceUrlProvider -   Found resource handler mapping: URL pattern="/**/favicon.ico", locations=[ServletContext resource [/], class path resource [META-INF/resources/], class path resource [resources/], class path resource [static/], class path resource [public/], class path resource []], resolvers=[org.springframework.web.servlet.resource.PathResourceResolver@305094a7]
+15:02:03.957 DEBUG o.s.w.s.r.ResourceUrlProvider -   Found resource handler mapping: URL pattern="/webjars/**", locations=[class path resource [META-INF/resources/webjars/]], resolvers=[org.springframework.web.servlet.resource.PathResourceResolver@1fb2d4de]
+15:02:03.957 DEBUG o.s.w.s.r.ResourceUrlProvider -   Found resource handler mapping: URL pattern="/**", locations=[ServletContext resource [/], class path resource [META-INF/resources/], class path resource [resources/], class path resource [static/], class path resource [public/]], resolvers=[org.springframework.web.servlet.resource.PathResourceResolver@84ce808]
+15:02:04.049 DEBUG o.s.w.c.s.StandardServletEnvironment -   Adding PropertySource 'server.ports' with highest search precedence
+15:02:04.068 INFO  c.v.c.d.App -   Started App in 47.821 seconds (JVM running for 48.989)
