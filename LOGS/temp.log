@@ -43,4 +43,12 @@ output {
     }
 }
 
+-----------
+
+11:32:21.384 INFO  c.v.c.c.a.u.LoggingServiceImpl -   REQUEST application=[CCRSDIRECT], method=[POST], path=[/ccrs-direct/api/dropdown/kpiMetrics], user=[maramti], parameters=[Empty / No Parameters], body=[null]
+11:32:21.384 INFO  c.v.c.c.a.CCRSLogger -   Check the response body content size = 2535
+11:32:21.384 INFO  c.v.c.c.a.u.LoggingServiceImpl -   RESPONSE application=[CCRSDIRECT], method=[POST], path=[/ccrs-direct/api/dropdown/kpiMetrics], user=[maramti], responseHeaders=[{Cache-Control=no-cache, no-store, max-age=0, must-revalidate, X-Content-Type-Options=nosniff, Expires=0, Pragma=no-cache, X-XSS-Protection=1; mode=block, Content-Type=application/json;charset=UTF-8}], responseBody=[{"data":[{"metricName":"GROSS_ONE_TALK_TO_QUOTA","metricDisplayName":"Gross One Talk Towards Quota","metricDataType":"NUMBER","metricType":"KPI","status":"A","addedByUserId":"userID","lastModifiedByUserId":null,"addedDateTime":1590001490000,"lastModifiedDateTime":null},{"metricName":"NET_ONE_TALK_TO_QUOTA","metricDisplayName":"Net One Talk Towards Quota","metricDataType":"NUMBER","metricType":"KPI","status":"A","addedByUserId":"userID","lastModifiedByUserId":null,"addedDateTime":1590001490000,"lastModifiedDateTime":null},{"metricName":"GROSS_ONE_TALK_SD","metricDisplayName":"Gross One Talk Sales Dollar Attainment","metricDataType":"NUMBER","metricType":"KPI","status":"A","addedByUserId":"userID","lastModifiedByUserId":null,"addedDateTime":1590001490000,"lastModifiedDateTime":null},{"metricName":"NET_ONE_TALK_SD","metricDisplayName":"Net One Talk Sales Dollar Attainment","metricDataType":"NUMBER","metricType":"KPI","status":"A","addedByUserId":"userID","lastModifiedByUserId":null,"addedDateTime":1590001490000,"lastModifiedDateTime":null},{"metricName":"GROSS_ONE_TALK_CNT","metricDisplayName":"Gross One Talk Count ","metricDataType":"NUMBER","metricType":"KPI","status":"A","addedByUserId":"userID","lastModifiedByUserId":null,"addedDateTime":1590001490000,"lastModifiedDateTime":null
+
+-----------
+
 
