@@ -51,4 +51,9 @@ output {
 
 -----------
 
+11:32:21.384 INFO  c.v.c.c.a.u.LoggingServiceImpl -   REQUEST application=[CCRSDIRECT], method=[POST], path=[/ccrs-direct/api/dropdown/kpiMetrics], user=[maramti], parameters=[Empty / No Parameters], body=[null]
 
+%{TIME:log_time}%{SPACE}%{LOGLEVEL:log_level}%{SPACE}%{JAVACLASS:class_name}%{SPACE}-%{SPACE}%{WORD:isReqOrRes}%{SPACE}%{WORD:}=%{SQUAREBRACKETS}
+
+JAVACLASS (?:[a-zA-Z$_][a-zA-Z$_0-9]*\.)*[a-zA-Z$_][a-zA-Z$_0-9]*
+SQUAREBRACKETS \[(.*?)\]
