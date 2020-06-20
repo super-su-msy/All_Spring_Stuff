@@ -57,3 +57,5 @@ output {
 
 JAVACLASS (?:[a-zA-Z$_][a-zA-Z$_0-9]*\.)*[a-zA-Z$_][a-zA-Z$_0-9]*
 SQUAREBRACKETS \[(.*?)\]
+
+%{SPACE}%{WORD:isReqOrRes}%{SPACE}%{WORD:keys}=\[%{WORD:app_name}\],%{SPACE}%{WORD:keys}=\[%{WORD:Http_call}\],%{SPACE}%{WORD:keys}=\[%{UNIXPATH:uri_path}\],%{SPACE}%{WORD:keys}=\[%{USERNAME:user}\],%{SPACE}%{WORD:keys}=\[%{WORD:data}\],%{SPACE}%{WORD:keys}
