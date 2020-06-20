@@ -58,4 +58,13 @@ output {
 JAVACLASS (?:[a-zA-Z$_][a-zA-Z$_0-9]*\.)*[a-zA-Z$_][a-zA-Z$_0-9]*
 SQUAREBRACKETS \[(.*?)\]
 
+------ update 6/20
+
+REQUEST application=[CCRSDIRECT], method=[POST], path=[/ccrs-direct/api/dropdown/kpiMetrics], user=[maramti], parameters=[Empty], body=[{
+      "ContainerId": "c1e77181-1f1c-4355-9f0e-33b5fad6a308",
+      "UserId": "82cc5179-3785-45cf-9cff-00fe90896274",
+      "LoginId": "testloginId",
+      "ClassNo": "a54df09f-5ee6-4a4c-a8b2-87004aaa3540"
+}]
+
 %{SPACE}%{WORD:isReqOrRes}%{SPACE}%{WORD:keys}=\[%{WORD:app_name}\],%{SPACE}%{WORD:keys}=\[%{WORD:Http_call}\],%{SPACE}%{WORD:keys}=\[%{UNIXPATH:uri_path}\],%{SPACE}%{WORD:keys}=\[%{USERNAME:user}\],%{SPACE}%{WORD:keys}=\[%{WORD:data}\],%{SPACE}%{WORD:keys}
